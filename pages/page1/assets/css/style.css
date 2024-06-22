@@ -1,0 +1,115 @@
+:root{
+    --site-color-01: #c13584;
+    --site-color-01-hover: #9e2f63;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    margin-bottom: 1px;
+}
+.logo{
+    font-size: 30px;
+    color: var(--color-white);
+    color: white;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: 20px;
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: all .2s ease;
+
+}
+body:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/facebook-color.png) url(..//imginstagram-color.png);
+}
+h1{
+    font-size: 26px;
+    line-height: 32px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p{
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #1A253A;
+    margin-top: 60px;
+    background-image: url(../js/logo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-intro h1{
+    font-size: 96px;
+    line-height: 106px;
+}
+main p{
+    font-size: 18px;
+    line-height: 30px;
+}
+main a{
+    margin-top: 30px;
+    font-size: 18px;
+    display: block;
+    background-color: var(--site-color-01);
+    padding: 10px 20px;
+    width: fit-content;
+}
+main .main-quotes p{
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+    margin: 40px 0;
+}
+main .main-quotes p:nth-child(2){
+    margin-left: 100px;
+}
+main .main-intro{
+    position: relative;
+    right: 20vh;
+    padding-bottom: 8vh;
+}
+
+main .main-quotes{
+    position: relative;
+    left: 4vh;
+    padding-bottom: 8vh;
+}
+.header.main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
