@@ -1,53 +1,102 @@
-Overview
+<a name="readme-top">
 
-Description of the project in details.
+<br/>
+
+<br />
+<div align="center">
+  <a href="https://github.com/your-github-username/">
+    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  </a>
+  <h3 align="center">Hero Section Design</h3>
+</div>
+<div align="center">
+  A project showcasing a hero section design for a website.
+</div>
+
+<br />
+
+![](https://visit-counter.vercel.app/counter.png?page=your-github-username/WD-Hero-Section-Design)
+
+---
+
+<br />
+<br />
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#overview">Overview</a>
+      <ol>
+        <li>
+          <a href="#key-components">Key Components</a>
+        </li>
+        <li>
+          <a href="#technology">Technology</a>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <a href="#rules-practices-and-principles">Rules, Practices and Principles</a>
+    </li>
+    <li>
+      <a href="#resources">Resources</a>
+    </li>
+  </ol>
+</details>
+
+---
+
+## Overview
+
+The Hero Section Design project demonstrates the implementation of a hero section for a website, featuring a welcome message, a description, and inspirational quotes. This project utilizes modern web design techniques to create an engaging and visually appealing hero section.
 
 Guiding Question:
+- What is the project?  
+  This project is about designing a hero section for a website.
+- What's the purpose?  
+  To create a stunning and functional hero section that captures the visitor's attention.
+- What are key components?  
+  The main introductory section and the inspirational quotes section.
+- What technology used and how it is used?  
+  HTML and CSS for structure and styling, Font Awesome for icons.
 
-What is the project?
-The project is a multi-page website with a focus on using modern web technologies and design principles.
+### Key Components
+- Single Page Website
+- Responsive design
+- Integrated Font Awesome icons
 
-What is the purpose?
-The purpose of the project is to showcase the developer's skills in creating an engaging and functional website that utilizes various web technologies and design techniques.
+### Technology
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-What are the key components?
-The key components of the project include:
+## Rules, Practices and Principles
+1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
+2. Do not rename any .html files; always use `index.html` as the filename.
+3. Place files in their respective folders.
+4. All file naming is in camel case.
+   - Camel case is a naming format where there is no white space in the separation of each word; the first word is all lowercase while the succeeding words' first letters are uppercase followed by lowercase letters.
+   - ex.: `buttonAnimatedStyle.css`
+5. Use only `External CSS`.
+6. Renaming of Pages folder names is a must and should relate to what it is doing or the data it holds.
+7. File Structure to follow below.
 
-1. Multi-Page Website/Single Page Website: The project will be a multi-page website, with each page serving a specific purpose or containing unique content.
-2. Parallax Transition: The website will incorporate parallax scrolling effects to create a visually engaging and immersive user experience.
-3. Transactional: The website may include a transactional component, such as an e-commerce section or a contact form, allowing users to interact with the site in a more dynamic way.
-What technology is used and how is it used?
-The project will utilize the following web technologies:
-
-1. HTML: Used to structure the content and layout of the website pages.
-2. CSS: Used to style the website, including the implementation of the parallax effect and other visual elements.
-3. JavaScript: Used to add interactivity and enhance the user experience, such as handling form submissions, animations, and any transactional components.
-Rules, Practices, and Principles
-
-File Naming Convention: All files will be named using camel case, and the subject of the project will be prefixed with "WD-" (e.g., "WD-MultiPageWebsite").
-HTML File Naming: The main HTML file for each page will be named "index.html".
-File Structure: Files will be organized into respective folders, such as "Pages", "CSS", "JS", etc.
-External CSS: All CSS will be written in external stylesheets, following the best practice of separating content (HTML) from presentation (CSS).
-Page Folder Naming: The folder names for each page will be renamed to reflect the purpose or data they contain.
-By following these guidelines, the project will maintain a consistent structure, adhere to best practices, and showcase the developer's attention to detail and organization.
-
-WD-ProjectName
+WD-Hero-Section-Design
 └─ assets
-|   └─ css
-|   |   └─ style.css
-|   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
+| └─ css
+| | └─ style.css
+| └─ img
+| | └─ nyebe_white.png
+| └─ js
+| └─ script.js (if needed)
 └─ index.html
 └─ readme.md
+
+
+## Resources
+
+| Title | Purpose | Link |
+|-|-|-|
+| Font Awesome | Icon library used in the project | [fontawesome.com](https://fontawesome.com) |
+| CSS Tricks | A collection of useful CSS techniques and tips | [css-tricks.com](https://css-tricks.com) |
+| MDN Web Docs | Comprehensive documentation for web development | [developer.mozilla.org](https://developer.mozilla.org) |
