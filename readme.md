@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/your-github-username/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/logo.jpg" alt="logo" width="130" height="100">
   </a>
   <h3 align="center">Hero Section Design</h3>
 </div>
