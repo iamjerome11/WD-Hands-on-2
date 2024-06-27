@@ -47,9 +47,8 @@ nav ul li a:hover{
     background-color: #eb7620;
     transition: 0.5s ease;
 }
-nav ul li .active{
-    background-color: ;
-}
+
+    
 .article{
     width: 50%;
     margin: auto;
