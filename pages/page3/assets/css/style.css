@@ -1,80 +1,225 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background: black;
-    align-items: center;
+body {
+    background-color: white;
 }
 
-.container{
-    display: flex;
+.home {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.card{
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-}
-
-img{
-    height: 500px;
-    width: 250px;
-    border-radius: 3px;
-    transition: .5s;
-}
-
-.intro{
-    height: 70px;
-    width: 350px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 240px;
-    background: rgba(27, 27, 27, .5);
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
     color: white;
-    transition: .5s;
-
+    text-decoration: none;
+    border-radius: 4px;
 }
 
-h1{
-    margin: 10px;
-    font-size: 40px;
+.button:hover {
+    background-color: red;
 }
 
-p{
-    font-size: 20px;
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card .intro {
+    padding: 16px;
+    background: rgba(27, 27, 27, 0.5);
+    color: white;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+
+.card .intro h1 {
+    font-size: 24px;
+}
+
+.card .intro p {
+    font-size: 14px;
     visibility: hidden;
     opacity: 0;
+    transition: opacity 0.5s;
 }
 
-span{
-    font-weight: bold;
-}
-
-.card:hover{
-    cursor: pointer;
-}
-
-.card:hover .intro{
+.card:hover .intro {
     height: 220px;
-    bottom: 240px;
     background: black;
 }
 
-.card:hover p{
-    opacity: 1;
+.card:hover .intro p {
     visibility: visible;
-
+    opacity: 1;
 }
 
-.card:hover img{
-    transform: scale(1.1) rotate();
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Box Card */
+.box {
+    transition: transform 1s;
+}
+
+.box img {
+    border-radius: 8px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+/* Card 2 */
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: black;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: height 0.5s;
+}
+
+.card2:hover {
+    height: 450px;
+}
+
+.card2 .imgBx {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    transition: top 0.5s;
+    position: relative;
+}
+
+.card2:hover .imgBx {
+    top: -50px;
+}
+
+.card2 .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 .content {
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* Card 3 */
+.card3 {
+    height: 200px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: height 0.5s;
+}
+
+.card3:hover {
+    height: 450px;
+}
+
+.card3 .imgBx2 {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    transition: width 0.5s, height 0.5s;
+}
+
+.card3:hover .imgBx2 {
+    width: 250px;
+    height: 250px;
+}
+
+.card3 .imgBx2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3 .content2 {
+    padding: 16px;
+    text-align: center;
+}
+
+/* Maincontainer Card */
+.maincontainer {
+    perspective: 1000px;
+}
+
+.thecard {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront, .theback {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.thefront {
+    background: black;
+}
+
+.theback {
+    background: plum;
+    transform: rotateY(180deg);
 }
