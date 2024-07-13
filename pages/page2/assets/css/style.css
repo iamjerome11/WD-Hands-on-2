@@ -7,7 +7,7 @@
     min-height: 100vh;
     grid-auto-flow: column;
     place-content: center;
-    background: black
+    background: black;
 }
 
 .home{
@@ -27,7 +27,7 @@
 }
 
 .container-fluid{
-    background-color: #271f1f5b; 
+    background-color: lightblue; 
 }
 
 .Label{
